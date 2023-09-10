@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
 
-
 const Loading = ({ children }) => {
   const [loading, setLoading] = useState();
 
@@ -28,7 +27,7 @@ const Loading = ({ children }) => {
     );
   }
   // use user
-  if () {
+  if (user) {
     return children;
   }
 
